@@ -48,7 +48,7 @@ app.post('/api/email',(req,res)=>{
       from: 'INFINITY',
       to: data.email,
       subject: 'Email Validation',
-      text: `OTP is - ${data.otp} , /n do not share the otp with anyone`
+      text: `OTP is - ${data.otp} , \n do not share the otp with anyone`
    
    };
    
