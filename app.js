@@ -28,7 +28,7 @@ app.post('/api/email',(req,res)=>{
     res.header("Access-Control-Allow-Origin","*");
     res.header("Access-Control-Allow-Method:GET,POST,PUT,DELETE")
     console.log("connected with backedn")
-    const randomPin = Math.floor(100000 + Math.random() * 9000);
+    const randomPin = Math.floor(100000 + Math.random() * 900000);
     var data ={
      email : req.body.email,
      otp:randomPin
